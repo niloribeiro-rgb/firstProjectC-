@@ -1,0 +1,42 @@
+
+using System.Runtime.CompilerServices;
+
+internal class program
+{
+
+    private static void Main(string[] args)
+    {
+        double primeiroValor;
+        double segundoValor;
+        double resultado;
+
+        Console.WriteLine("diga 1 valor");
+        primeiroValor = int.Parse(Console.ReadLine());
+        Console.WriteLine("diga 2 valor");
+        segundoValor = int.Parse(Console.ReadLine());
+
+        somar(primeiroValor, segundoValor);
+    }
+    private static void somar(double primeiroValor, double segundoValor)
+    {
+        double soma;
+        soma = primeiroValor + segundoValor;
+        Console.WriteLine("soma = " + soma);
+    }
+}
+
+// inteira int
+// real ponto flutuando (decimal, float, double)
+//carctere string
+//logica bool (verdadeiro ou falso)
+
+//operadores aritimetricos
+//operadores relacionais
+//operadores logicos
+
+//criar um sistema de boletim
+//regra de negocio
+//ler o nome do aluno
+//solicitar quatro notas
+//calcular media
+//exibir nome do aluno, notas e a media
