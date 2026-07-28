@@ -1,0 +1,23 @@
+public class program
+{
+    public static void Main(string[] args)
+    {
+        int compradas;
+        double preco;
+        double precoTotal;
+
+        Console.WriteLine("qual a quantidade de maçãs");
+        compradas = int.Parse(Console.ReadLine());
+        if (compradas >= 10)
+        {
+            preco = 1;
+        }
+        else
+        {
+            preco = 1.30;
+        }
+        precoTotal = preco * compradas;
+        Console.WriteLine("compradas: " + compradas + " precoTotal:" + precoTotal);
+
+    }
+}
