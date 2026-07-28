@@ -1,0 +1,40 @@
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        string nome;
+        decimal nota1;
+        decimal nota2;
+        decimal nota3;
+        decimal nota4;
+        decimal media;
+
+        Console.WriteLine("qual nome do aluno");
+        nome = Console.ReadLine();
+        Console.WriteLine("qual a nota 1");
+        nota1 = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("qual a nota 2");
+        nota2 = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("qual a nota 3");
+        nota3 = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("qual a nota 4");
+        nota4 = decimal.Parse(Console.ReadLine());
+
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
+        Console.WriteLine("nome= " + nome + " nota1= " + nota1 + " nota2= " + nota2 + " nota3= " + nota3 + " nota4= " + nota4 + " media= " + media);
+
+        string status;
+
+        if (media >= 6)
+        {
+            status = "passou";
+        }
+        else
+        {
+            status = "reprovado";
+        }
+
+        Console.WriteLine("status: " + status);
+
+    }
+}
